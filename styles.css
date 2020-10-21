@@ -1,0 +1,40 @@
+body {
+  color: blue;
+}
+.navbar {
+  color: darkblue;
+  padding: 1rem;
+  background-color: lightblue;
+}
+.footer {
+  background-color: lightblue;
+  color: darkblue;
+  padding: 1rem;
+}
+.btn-primary:hover {
+  background-color: cyan;
+  color: darkblue;
+}
+.hero-background-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+  padding-top:200px;
+  padding-bottom:200px;
+}
+
+.hero-background-img:after {
+  content: "";
+  position: absolute;
+  background-image: url("./daniel-roe-lpjb_UMOyx8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5; /* Tone the image down further by giving it transparency */
+}
+
+}
